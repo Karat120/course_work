@@ -13,21 +13,13 @@ public class MainActivity extends AppCompatActivity {
 
     FirebaseDatabase database = FirebaseDatabase.getInstance();
     DatabaseReference myRef = database.getReference("message");
-   Button button;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        button=findViewById(R.id.button);
-        button.setOnClickListener(new View.OnClickListener()
-        {
-            @Override
-            public  void onClick(View view){
-                myRef.setValue("hello kursach");
-            }
-        });
+
+
 
 
     }
